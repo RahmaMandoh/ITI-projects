@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Container{
+    background-color: #e0b0ff;
+    width: 100%;
+    height: 100%;
+    margin-top: 100px;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 30px;
+    /* padding-bottom: 30px; */
+    border-radius: 10px;
+}
+
+h4{
+    color: #6f4685;
+    font-size: 40px;
+}
+.InputFilled{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn{
+    display: flex;  
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+input{
+    width: 400px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    text-indent: 15px;
+    color: #6f4685;
+    background-color: white;
+    font-size: 15px;
+}
+
+label{
+    color: white;
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+
+.Name, #Age, #Email{
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+
+input::placeholder{
+    color: rgb(194, 194, 194);
+    padding-left: 10px;
+    
+}
+
+input:hover {
+    border: 1px solid #6f4685;
+}
+
+input:focus {
+    border: 1px solid #6f4685;
+    border-radius: 10px;
+}
+#Addbtn{
+    background-color: #6f4685;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    width: 195px;
+    height: 40px;
+    margin-right: 5px;
+
+}
+
+#Addbtn:hover{
+    background-color: white;
+    color: #6f4685;
+    border: 1px solid#6f4685;
+}
+
+#Resetbtn{
+    background-color: white;
+    color: #6f4685;
+    border: 1px solid#6f4685;
+    border-radius: 10px;
+    width: 195px;
+    height: 40px;
+    margin-left: 5px;
+}
+
+#Resetbtn:hover{
+    background-color: #6f4685;
+    color: white;
+    border: none;
+}

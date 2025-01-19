@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+    <!-- <script src="../modernizr-custom.js"></script> -->
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <form>
+        <h1>Change Email Address</h1>
+        <input type="text" name="username" placeholder="Username" pattern="[a-z]{1,15}" required>
+        <p>The required user name may only be a series of alphabetical characters.</p>
+        <input type="email" id="email" name="email" placeholder="ُEmail"
+        pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+        <p>The required user name may only be a series of alphabetical characters<br/> other than '@' sign.</p>
+        <button type="submit">Change</button>
+    </form>
+</body>
+</html>
+

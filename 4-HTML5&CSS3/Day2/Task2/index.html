@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="loginForm">
+        <h1>Change Email Address</h1>
+
+        <!-- Username Input -->
+        <input type="text" id="userName" name="username" placeholder="Username" pattern="[a-z]{1,15}" required>
+        <p>The required username may only be a series of alphabetical characters.</p>
+
+        <!-- Email Input -->
+        <input type="email" id="email" name="email" placeholder="Email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+        <p>The required email must be a valid email format.</p>
+
+        <!-- Remember Me Checkbox -->
+        <input type="checkbox" id="rememberMe">
+        <label for="rememberMe">Remember Me</label>
+
+        <!-- Submit Button -->
+        <button type="submit">Log in</button>
+    </form>
+
+    <script>
+        // On page load, check if there's a saved username and populate the input field
+        window.onload = function() {
+            const savedUserName = localStorage.getItem('userName');
+            if (savedUserName) {
+                document.getElementById('userName').value = savedUserName;
+                document.getElementById('rememberMe').checked = true;
+            }
+        };
+
+        // Handle form submission
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form submission for demonstration purposes
+
+            const userName = document.getElementById('userName').value;
+            const rememberMeChecked = document.getElementById('rememberMe').checked;
+
+            if (rememberMeChecked) {
+                // Save username to localStorage
+                localStorage.setItem('userName', userName);
+            } else {
+                // Remove username from localStorage
+                localStorage.removeItem('userName');
+            }
+
+            alert('Form submitted!');
+        });
+    </script>
+</body>
+</html>

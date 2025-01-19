@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#loader{
+    width: 5px;
+    height: 10px;
+    background-color: rgb(246, 221, 187);
+    /* border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px; */
+}
+
+.HeaderContaner{
+    text-align: center;
+    padding: 15px;
+    /* margin: 25px; */
+    /* display: none; */
+    /* display: none; */
+}
+img{
+    height: 200px;
+    width: 200px;
+    border-radius: 5px;
+    display: none;
+    /* margin: 15px; */
+}
+
+.ProductsContaner{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+
+/* .BackGround{
+    background-color: rgb(246, 221, 187);
+    height: 100vh;
+    width: 100%;
+} */
+.Img{
+    /* display: none; */
+}
+
+h1, p, img{
+    display: none;
+}

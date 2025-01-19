@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#img1{
+    background-image: url('img/1.jpeg');
+    height: 300px;
+    width: 350px;
+    background-repeat: repeat;
+}
+#img2{
+    background-image: url('img/2.jpeg');
+    height: 300px;
+    width: 350px;
+    background-repeat: repeat;
+}
+#img3{
+    background-image: url('img/3.jpg');
+    height: 300px;
+    width: 350px;
+    background-repeat: repeat;
+}
+#img4{
+    background-image: url('img/4.jpg');
+    height: 300px;
+    width: 350px;
+    background-repeat: repeat;
+}
+#img5{
+    background-image: url('img/5.jpg');
+    height: 300px;
+    width: 350px;
+    background-repeat: repeat;
+}
+#img6{
+    background-image: url('img/6.jpeg');
+    height: 300px;
+    width: 350px;
+    background-repeat: repeat;
+}
+#img7{
+    background-image: url('img/7.jpg');
+    height: 300px;
+    width: 350px;
+    background-repeat: repeat;
+}
+#img8{
+    background-image: url('img/8.jpeg');
+    height: 300px;
+    width: 350px;
+    background-repeat: repeat;
+}
+.Row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+p{
+    color: white;
+    display: none;
+}
+
+#img1:hover, #img2:hover, #img3:hover, #img4:hover,
+#img5:hover , #img6:hover, #img7:hover, #img8:hover{
+    background-color: brown;
+    background-image: none;
+    display: block;
+}
+.Card:hover p{
+display: block;
+}

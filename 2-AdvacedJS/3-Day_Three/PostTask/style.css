@@ -1,0 +1,73 @@
+
+.body{
+  font-family: "Roboto Condensed", serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.TitleContainer, .LoadingState{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#BT{
+    width: 85%;
+    height: 80px;
+    border-radius: 15px;
+    border: none;
+    background-color: #a94064;
+    color: #fcf4f6;
+    cursor: pointer;
+}
+#title{
+    font-size: 30px;
+    color: #6e2841;
+    font-weight: bold;
+}
+
+.UserContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    /* border-radius: 15px; */
+
+}
+
+.user{
+    background-color: #ffd1dc;
+    padding: 20px;
+    width: 80%;
+    border-radius: 15px;
+}
+
+#titleContent{
+    font-size: 20px;
+    color: #a94064;
+}
+
+#bodyContent{
+    font-size: 15px;
+    color: #6e2841;
+}
+
+h3{
+    font-size: 40px;
+    color: #a94064;
+}
+.LoadingState{
+    display: none;
+}
+.Error{
+    display: none;
+}
+
+.EmptyState{
+    display: none;
+}

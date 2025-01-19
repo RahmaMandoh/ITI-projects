@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.backgroundImg{
+    background-image: url("./images/1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+    z-index: -1;
+}
+.Box{
+    /* background-image: url("./images/cc47a642c1e99f12056889f41a0df342.jpg"); */
+    position: relative;
+    background-color: black;
+    opacity: 65%;
+    height: 20vh;
+    width: 40vh;
+    z-index: 0;
+    top: 400px;
+    bottom: 0px;
+    left: 1000px;
+    right: 0px;
+    z-index: 0;
+}
+
+p{
+    color: white;
+    font-size: 25px;
+    /* position: absolute;
+    z-index: 1; */
+    padding: 30px;
+}
+span{
+    color: white;
+    font-size: 15px;
+    padding: 15px;
+    /* position: absolute;
+    z-index: 1; */
+
+}

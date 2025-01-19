@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="AlbumImageContainer">
+        <img id="albumImage" src="./Image/1.jpeg">
+    </div>
+    <div>
+        <audio id="audioPlayer" ontimeupdate="changRange()" controls autoplay loop>
+            <source src="./Audios/footsteps-on-nature-trail-246038.mp3"/>
+        </audio>
+    </div>
+
+    <div>
+        <button class="btnControls" onclick="playAudio()">Play</button>
+        <button class="btnControls" onclick="pauseAudio()">Pause</button>
+        <button class="btnControls" onclick="stopAudio()">Stop</button>
+        <button class="btnControls" onclick="muteAudio()">Mute</button>
+    </div>
+
+    <br><br>
+
+    <div class="VT">
+        Volume: <input type="range" min="0" max="1" step="0.1" value="1" oninput="changVolum(this)">
+        Time: <input type="range" min="0" value="0" oninput="changTime(this)">
+    </div>
+
+    <br><br>
+
+    
+
+    <br>
+
+    <div class="AlbumContainer">
+        <button class="Album" onclick="changeAudio('./Audios/footsteps-on-nature-trail-246038.mp3', './Image/1.jpeg')">Audio One</button>
+        <button class="Album" onclick="changeAudio('./Audios/nature-birds-singing-217212.mp3', './Image/2.webp')">Audio Two</button>
+        <button class="Album" onclick="changeAudio('./Audios/nature-sounds-240504.mp3', './Image/3.jpg')">Audio Three</button>
+    </div>
+</body>
+
+<script>
+    var audio = document.getElementById("audioPlayer");
+    var timeRange = document.querySelectorAll("input")[1];
+
+    window.addEventListener("load", function() {
+        timeRange.setAttribute("max", audio.duration);
+    });
+
+    function playAudio() {
+        audio.play();
+    }
+
+    function pauseAudio() {
+        audio.pause();
+    }
+
+    function stopAudio() {
+        audio.load();
+        audio.pause();
+    }
+
+    function muteAudio() {
+        audio.muted = !audio.muted;
+    }
+
+    function changVolum(rangeVolum) {
+        audio.volume = rangeVolum.value;
+    }
+
+    function changTime() {
+        audio.currentTime = timeRange.value;
+    }
+
+    function changRange() {
+        timeRange.value = audio.currentTime;
+    }
+
+    function changeAudio(audioSrc, imageSrc) {
+        audio.src = audioSrc;
+        audio.load();
+        audio.play();
+        var albumImage = document.getElementById("albumImage");
+        albumImage.src = imageSrc;
+    }
+</script>
+</html>

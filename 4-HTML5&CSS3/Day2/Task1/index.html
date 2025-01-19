@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task1</title>
+  <style>
+    #map {
+      height: 80%;
+    }
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    #locationSelector {
+      margin: 10px;
+      padding: 10px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+    
+  <select id="locationSelector">
+    <option value="current">Current Location</option>
+    <option value="29.966604567016415, 31.27026937811316">Maadi Grand Mall</option>
+    <option value="29.982136902456887, 31.31734907586648">City Center Maadi</option>
+    <option value="29.961092734335864, 31.257553681914533">Maadi Metro Station</option>
+  </select>
+
+  <!-- Map div -->
+  <div id="map"></div>
+
+  <!-- Google Maps Script -->
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&v=weekly"
+    defer
+  ></script>
+
+  <script>
+    let map, marker;
+
+    // Initialize map with user's current location
+    function initMap(lat, lng) {
+      const myLatLng = { lat, lng };
+      map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 12,
+        center: myLatLng,
+      });
+
+      marker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+        title: "Your Location",
+      });
+    }
+
+    // Get user's current location
+    // function showCurrentLocation() {
+    //   window.navigator.geolocation.getCurrentPosition(sucess,error);
+    //   function sucess(posObj) {
+    //   initMap(posObj.coords.latitude, posObj.coords.longitude);
+    // }
+    // function error(errObj) {
+    //   if (errObj === 1) {
+    //     alert("Please, enable your location");
+    //   } else if (errObj === 2) {
+    //     alert("Network error. Please, tye again.");
+    //   } else {
+    //     alert("Please, tye again.");
+    //   }
+    // }
+    // }
+
+    // Initial load with user's location
+    window.navigator.geolocation.getCurrentPosition(
+      function sucess(posObj) {
+      initMap(posObj.coords.latitude, posObj.coords.longitude);
+    },
+    function error(errObj) {
+      if (errObj === 1) {
+        alert("Please, enable your location");
+      } else if (errObj === 2) {
+        alert("Network error. Please, tye again.");
+      } else {
+        alert("Please, tye again.");
+      }
+    }
+    );
+
+    // Update map based on dropdown selection
+    document.getElementById("locationSelector").addEventListener("change", function () {
+      const selectedValue = this.value;
+
+      if (selectedValue === "current") {
+        showCurrentLocation();
+      } else if (selectedValue) {
+        const [lat, lng] = selectedValue.split(",").map(Number);
+        updateMap(lat, lng);
+      }
+    });
+
+    // Function to update map position
+    function updateMap(lat, lng) {
+      const newLatLng = { lat, lng };
+      map.setCenter(newLatLng);
+      marker.setPosition(newLatLng);
+      marker.setTitle("Selected Location");
+    }
+  </script>
+</body>
+</html>

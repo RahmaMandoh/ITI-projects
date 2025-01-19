@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@types/jquery": "^3.5.32",
+    "jquery.terminal": "^2.44.1"
+  }
+}

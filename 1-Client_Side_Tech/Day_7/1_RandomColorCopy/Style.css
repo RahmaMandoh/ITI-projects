@@ -1,0 +1,13 @@
+.clickable-div{
+    height: 200px;
+    width: 200px;
+    background-color: palevioletred;
+    color: white;
+}
+.container{
+    display: flex;
+    height: 200px;
+    width: 200px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}

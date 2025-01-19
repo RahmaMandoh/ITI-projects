@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:center;
+    background-color: #c5c5c5;
+    margin-top: 15px;
+    height: 500px;
+    border-radius: 15pz;
+}
+.Title{
+    text-align: center;
+}
+h1{
+    color: #565656;
+}
+.Title p{
+    color: #5a5a5a;
+    font-weight: bold;
+}
+.BtnsControl{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Control{
+    display: flex;
+    margin: 30px;
+    width: 400px;
+    background-color: #4e4e4e;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fa-bullhorn, .fa-comments, .fa-cloud-download, .fa-leaf, .fa-cogs, .fa-heart{
+    color: rgb(181, 17, 17);
+    font-size: 40px;
+}
+
+.TextControl h3{
+    color: #5a5a5a;
+    font-weight: bold;
+}
+.TextControl p{
+    color: #4e4e4e;
+}
+.TextControl{
+    gap: 1rem;
+}
+.icon{
+    width: 100px;
+    height: 100px;
+    background-color: azure;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon:hover{
+    background-color: rgb(181, 17, 17);
+}
+.icon:hover i{
+    color: azure;
+}
+
+

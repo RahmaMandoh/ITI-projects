@@ -1,0 +1,52 @@
+.walkMan{
+    position: absolute;
+    right: 0;
+    animation: move 3s ease-in-out infinite;
+}
+img{
+    height: 150px;
+}
+.TrafficLight{
+    background-color: black;
+    width: 120px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    border-radius: 15px;
+}
+.Red{
+    background-color: red;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-top: 15px;
+}
+.Yellow{
+    background-color: yellow;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.Green{
+    background-color: green;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.Green:hover{
+    box-shadow: 0 0 20px 10px green;
+}
+.Yellow:hover{
+    box-shadow: 0 0 20px 10px yellow;
+}
+.Red:hover{
+    box-shadow: 0 0 20px 10px red;
+}
+@keyframes move {
+    0% {right: 0;}
+    100% {right: 790px;}
+}

@@ -1,0 +1,349 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    justify-content: center;
+}
+
+.HeaderContaner{
+    background-image: url(Photos/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 120vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+
+    z-index: -1;
+}
+
+.HContainer{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+#HeaderList{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#HPoints{
+    display: inline;
+    font-size: 16px;
+    padding: 25px;
+    font-weight: 600;
+    
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+a:hover{
+    color: #d82a4e;
+}
+
+.NavBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    /* margin-left: 150px;
+    margin-right: 150px; */
+    /* position: relative; */
+    /* z-index: 1; */
+}
+
+.NavBar img, .NavBar button, .NavBar ul{
+    margin: 50px;
+}
+
+
+button{
+    padding: 15px 10px;
+    font-weight: 500;
+    background-color: #d82a4e;
+    color: #fff;
+    border: 0;
+    text-align: center;
+    font-size: 16px;
+    position: relative;
+    cursor: pointer;
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.HPara, .BodyContainer{
+    text-align: center;
+    padding-top: 130px;
+    padding-bottom: 50px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+h2{
+    font-size: 60px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+p{
+    color: #fff;
+    font-size: 14.1px;
+    font-weight: 500;
+    line-height: 2.2;
+}
+.BlackH{
+    color: #474747;
+}
+.BlackP{
+    color: #878787;
+}
+input{
+    padding: 15px 10px;
+    position: relative;
+    cursor: pointer;
+    width: 380px;
+    height: 60px;
+    cursor: pointer;
+    font-size: 14px;
+    float: left;
+    /* width: 36.4%; */
+    padding: 0 30px;
+    margin-right: 22px;
+    border: none;
+
+}
+
+.HInputs{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+    padding-top: 40px;
+}
+
+.SinglCourse#FirstCourse{
+    background-image: url(Photos/signup-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 120px;
+    padding-bottom:80px ;
+}
+
+.SinglCourse#SecundCourse{
+    background-image: url(Photos/2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 120px;
+    padding-bottom:80px ;
+}
+
+.SinglCourse#TheridCourse{
+    background-image: url(Photos/3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 120px;
+    padding-bottom:80px ;
+}
+
+.SinglCourse#FourthCourse{
+    background-image: url(Photos/4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 120px;
+    padding-bottom:80px ;
+}
+
+.SinglCourse#FivithCourse{
+    background-image: url(Photos/5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 120px;
+    padding-bottom:80px ;
+}
+
+.SinglCourse#SixedCourse{
+    background-image: url(Photos/6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 120px;
+    padding-bottom:80px ; 
+}
+.FirstRow{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.FirstPara{
+    margin: 100px;
+}
+
+.CourseContant{
+    background-color: #edf4f6;
+    width: 250px;
+    height: auto;
+    padding: 50px;
+    text-align: left;
+}
+.CourseContant:hover{
+    background-color: #d82a4e;
+    color: white;
+}
+.CourseContant h5{
+    color: #474747;
+    font-weight: 600;
+    margin: 0;
+    font-size: 20px;
+    padding: 4px;
+}
+.CourseContant p{
+    font-size: 14.1px;
+    color: #878787;
+    line-height: 2.2;
+    font-weight: 500;
+    padding: 4px;
+}
+.Course{
+    padding: 4px;
+}
+
+
+.CourseContant span {
+    color: #d82a4e;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 4px;
+}
+
+
+
+/* .CourseContant h5:hover{
+    color: #fff;
+}
+
+.CourseContant p:hover{
+    color: white;
+}
+
+.CourseContant span:hover{
+    color: white;
+} */
+
+
+.ContentBox{
+    height: 350px;
+    width: 1190px;
+    background-color: #d82a4e;
+    margin-left: 15px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h2.BoxH {
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 55px;
+    padding-top: 50px;
+}
+
+.WhiteSBox{
+    background-color: #fff;
+    height: 110px;
+    width: 830px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 44px 38px */
+}
+
+.WBInput{
+    background-color: #edf4f6;
+    width: 250px;
+}
+
+.FInput{
+    background-color: #edf4f6;
+    /* width: 180px;
+    height: 60px; */
+    cursor: pointer;
+    /* margin: 25px; */
+}
+
+.ColumnOne{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h4.HTC{
+    margin-bottom: 50px;
+    font-weight: 600;
+    font-size: 25px;
+    color: #474747;
+}
+
+.ULF{
+    padding-left: 25px;
+    list-style: none;
+}
+
+.FL{
+    background-color: #d82a4e;
+    margin: 10px;
+    border-radius: 50px;
+    font-size:10px;
+    color: #d82a4e;
+}
+
+.FooterContainer{
+    width: 100%;
+    /* margin-left: 100px; */
+}
+
+.ULF li{
+    padding: 15px;
+}
+
+.BList .ULF {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.BList .ULF li{
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 600;
+    color: #474747;
+    padding: 12px 10px 5px;
+    margin: 0 10px;
+    border-bottom: 4px solid transparent;
+    cursor: pointer;
+}
+
+#OneI{
+    background-image: url(Photos/1\ \(1\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 220px;
+    width: 350px;
+    padding-bottom:80px ; 
+}

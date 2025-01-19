@@ -1,0 +1,51 @@
+/* Point One */
+/* p{
+    color: red;
+} */
+
+/* Point Two */
+/* p, div{
+    background-color: aqua;
+} */
+
+/* Point Three */
+/* #myDiv > p.mainClass{
+    font-size: 60px;
+} */
+
+/* Point Four*/
+/* div p{
+    color: #b223ab;
+} */
+
+/* Point Five */  /*HOW TO DO IT? Inside of input we write type*/
+/* [type="text"].myClass{
+    background-color: blanchedalmond;
+} */
+
+/* Point Six */  /*I'm not sure honestly*/
+/* div~span{
+    background-color: hsl(318, 100%, 50%);
+} */
+
+/* div span{
+    color: rgb(189, 231, 34);   */
+    /* It did not happend, couse there is no span inside a div*/
+/* } */
+/* OR  JUST SIMPLE THING*/
+
+/* span{
+    background-color: rgb(189, 231, 34);
+} */
+
+
+/* Point Seven */
+/* p.myClass{
+    color: #4f07e9;
+} */
+
+/* Point Eight  */ /*I didn't think that it is true! It's TRUE, pravo!*/
+#myDiv{
+    /* background-color: black; */
+    background-color: #ffd505;
+}

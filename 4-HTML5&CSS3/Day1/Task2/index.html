@@ -1,0 +1,29 @@
+<!-- Color range -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+ </head>
+ <body>
+    <span id="red">Red</span>
+    <input type="range" min="0" max="255" oninput="ChangeColorRange()" value="0"/>
+    <span id="green">Green</span>
+    <input type="range" min="0" max="255" oninput="ChangeColorRange()" value="0"/>
+    <span id="blue">Blue</span>
+    <input type="range" min="0" max="255" oninput="ChangeColorRange()" value="0"/>
+    <p id="par">Change the 3 Color Ranges above and my color will change</p>
+ </body>
+ <script>
+    
+    
+    function ChangeColorRange(){
+        var R = document.querySelectorAll("input")[0].value;
+        var G = document.querySelectorAll("input")[1].value;
+        var B = document.querySelectorAll("input")[2].value;
+        var par = document.getElementById("par");
+        par.style.color = `rgb(${R},${G},${B})`;
+    }
+ </script>
+ </html>

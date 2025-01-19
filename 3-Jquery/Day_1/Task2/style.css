@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.Container{
+    height: 100vh;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.tabs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Tab1{
+    width: 80px;
+    height: 40px;
+    background-color: #dd9696ee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Content{
+    height: 40px;
+    width: 320px;
+    background-color: beige;
+    display: none;
+    text-align: center;
+    align-content: center;
+}

@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+.info-row {
+    background-color: #eef5fc;
+    text-align: left;
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+.edit, .delete {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}

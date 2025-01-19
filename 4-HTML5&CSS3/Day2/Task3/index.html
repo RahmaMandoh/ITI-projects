@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Circles Generator</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        canvas {
+            border: 1px solid #ccc;
+            display: block;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <h2>Generate Random Circles</h2>
+    <input type="color" id="colorPicker" value="#0000ff">
+    <button id="generateBtn">Click Me</button>
+    <canvas id="circleCanvas" width="800" height="400"></canvas>
+
+    <script>
+        const canvas = document.getElementById('circleCanvas');
+        const ctx = canvas.getContext('2d');
+        const button = document.getElementById('generateBtn');
+        const colorPicker = document.getElementById('colorPicker');
+
+        button.addEventListener('click', () => {
+            const color = colorPicker.value;
+            const numberOfCircles = Math.floor(Math.random() * 100) + 50; // Generate between 50 and 150 circles
+
+            ctx.clearRect(0, 0, canvas.width, canvas.height); // Clear the canvas
+
+            for (let i = 0; i < numberOfCircles; i++) {
+                const x = Math.random() * canvas.width;
+                const y = Math.random() * canvas.height;
+                const radius = Math.random() * 20 + 5; // Random radius between 5 and 25
+
+                ctx.beginPath();
+                ctx.arc(x, y, radius, 0, Math.PI * 2);
+                ctx.strokeStyle = color;
+                ctx.stroke();
+            }
+        });
+    </script>
+</body>
+</html>

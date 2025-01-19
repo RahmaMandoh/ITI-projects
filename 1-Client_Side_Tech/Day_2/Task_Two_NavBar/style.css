@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.NavBar{
+    /* position: fixed; */
+    position: sticky;
+    width: 100%;
+}
+ul{
+    list-style: none;
+    display: flex;
+    /* width: 100%; */
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(34, 25, 25);
+    /* color: #efeeee; */
+    height: 40px;
+    
+}
+li{
+    padding: 0 50 0 50;
+    list-style: none;
+    /* What did list style none did!! */
+    display: inline-block;
+    /* margin: 20px; */
+    /* We used here inline-block, to have the abillity
+     to give margin/padding */
+}
+a{
+    text-decoration: none;
+    color: #efeeee;
+}
+a:hover{
+    color: #ec0add;
+}
+
+p{
+    font-size: 25px;
+    padding-top: 80px;
+}

@@ -1,0 +1,23 @@
+form{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+input , button{
+    width: 500px;
+    height: 40px;
+    padding-left: 10px;
+    border-radius: 15px;
+    
+}
+p{
+    padding-right: 50px;
+    color: #6e6e6e;
+}
+button{
+    background-color: cornflowerblue;
+    color: white;
+    /* border: none; */
+}
