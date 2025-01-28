@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(31, 31, 31);
+}
+.containerBig{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type=text]{
+    background-color: black;
+    border: 2px solid #2c2c2cee ;
+    height: 50px;
+    width: 550px;
+    border-radius: 25px;
+    /* cursor: alias; */
+    padding-left: 15px;
+    margin-right: 10px;
+    color:#979595
+}
+#text {
+    margin-bottom: 30px;
+}
+#Plus {
+    width: 50px;
+    /* margin-right: 10px; */
+}
+#Delete, #Edit{
+    width: 20px;
+    padding-right: 8px;
+    /* gap: 100px; */
+    /* padding-top: px; */
+}
+.Container{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-around; */
+}
+.child {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+.child:not(:last-child) {
+    border-bottom: 1px solid #777;
+}
+#InputFilds{
+    background-color: rgb(24, 24, 24);
+    border: 2px solid #2c2c2cee ;
+    /* height: 50px; */
+    width: 550px;
+    border-radius: 25px;
+    padding: 0 15px;
+    margin-right: 10px;
+    transform: translateX(-25px);
+    color: #979595;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+}

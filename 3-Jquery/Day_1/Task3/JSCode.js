@@ -5,7 +5,7 @@ $(".Plus").click(function(){
     $(".InputFilds").append(
         `<div class = "child">
         <div>
-            <input type="checkbox" checked/>
+            // <input type="checkbox" checked/>
             <span class="">${$('input[type="text"]').val()}</span>
         </div>
                 

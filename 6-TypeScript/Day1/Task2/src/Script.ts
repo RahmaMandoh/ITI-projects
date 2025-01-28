@@ -11,7 +11,7 @@
 
 // type arr = (string | string[]) |  (string | number[]) | (string | object[]) | (string | boolean[]);
 
-function printValueLength (v:unknown) : void{
+function printValueLength<T> (v : T) : void{
     if(typeof v === "string"){
         console.log(`String length: ${v.length}`);
     }else if (Array.isArray(v)) {
