@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.Content{
+    display: grid;
+    height: 100vh;
+    text-align: center;
+    color: whitesmoke;
+    grid-template-rows: 1fr 2fr 1fr;
+    gap: 8px;
+}
+#header , #footer{
+    background-color: rgb(114, 114, 255);
+}
+.mainBody{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 4px;
+}
+
+#sidenav, #sidebar{
+    background-color: chocolate;
+    flex-grow: 1;
+}
+#mainContent{
+    flex-grow: 3;
+    background-color: darkseagreen;
+}
+
+@media  (max-width: 550px){
+    .mainBody{
+        grid-template-rows: 1fr 2fr 1fr;
+        grid-template-columns: 1fr;
+    }
+}
